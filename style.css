@@ -15,7 +15,12 @@ body {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 200px 200px 200px;
 }
+#test{
+	font-size:34px;
+	text-align:left;
+	font-weight: 700;
 
+}
 .img {
 	width: 150px;
 }
