@@ -2,13 +2,13 @@ body{
     display: flex;
     height: 100vh;
     margin: 0px;
-    background-color: #98A6D4;
+    background-color: #91E5F6;
     font-family:Arial, Helvetica, sans-serif;
 }
 .header__content{
     display:flex;
     width: 100%;
-    background-color: #98A6D4;
+    background-color: #91E5F6;
     height:300px;
 }
 
@@ -17,9 +17,12 @@ body{
 }
 
 .content__box{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
     height: 50vh;
     width: 100%;
-    background-color: #564D80;
+    background-color: #386FA4;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
 }
@@ -27,7 +30,7 @@ body{
 .navbar {
     display: flex;
     overflow: hidden;
-    background-color: #44344F;
+    background-color: #133C55;
     position: fixed;
     top: 0;
     width: 100%;
@@ -55,7 +58,7 @@ body{
   }
 
   .botbar {
-    background-color: #44344F;
+    background-color: #133C55;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -93,7 +96,26 @@ body{
     display:none;
 }
 .subject{
-    width:100px;
+    margin-top:10px;
+    justify-content:center;
+    width:90%;
     height:50px;
-    background-color: rgb(255, 0, 0);
+    background-color: #133C55;
+    border:none;
+    border-radius:15px;
+}
+.name__subject{
+    float:right;
+    margin-top:4px;
+    color:white;
+    font-weight:bolder;
+    font-size:18px;
+    letter-spacing:1px;
+}
+.logo__subject{
+    float:left;
+    background-color:#59A5D8;
+    width:30px;
+    height:30px;
+    border-radius:20px;
 }
