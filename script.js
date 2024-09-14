@@ -28,7 +28,6 @@ fetch('http://localhost:5000/data')
 connection.end();
 
 function changePanel(item){
-    console.log("work");
     let mainContent = document.getElementById("main");
     let taskManagerContent = document.getElementById("task__manager");
     let groupContent = document.getElementById("group");
@@ -66,4 +65,15 @@ function changePanel(item){
 
         shopContent.style.height = '100vh';
     }
+}
+function selectSubject(){
+    console.log("work");
+    
+    if(subject.style.backgroundColor == 'rgb(255, 0, 0)'){
+        this.style.backgroundColor = 'green';
+    }
+    else{
+        this.style.backgroundColor = 'red';
+    }
+
 }

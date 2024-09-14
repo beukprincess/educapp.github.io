@@ -92,3 +92,8 @@ body{
 #task__manager, #group, #shop{
     display:none;
 }
+.subject{
+    width:100px;
+    height:50px;
+    background-color: rgb(255, 0, 0);
+}
