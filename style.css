@@ -93,3 +93,6 @@ body{
     width:30px;
     height:30px;
 }
+#task__manager, #group, #shop{
+    display:none;
+}
