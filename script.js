@@ -34,15 +34,18 @@ function changePanel(item){
     let groupContent = document.getElementById("group");
     let shopContent = document.getElementById("shop");
     let subject = document.getElementById('subject');
+    let header = document.getElementById('header__content');
+    let mainScreen = document.getElementById('main__screen');
 
-    if(subject.style.backgroundColor == "#133C55"){
         if (item == "but__task__manager"){
             mainContent.style.display = 'none';
             taskManagerContent.style.display = 'flex';
             groupContent.style.display = 'none';
             shopContent.style.display = 'none';
     
-            mainContent.style.height = '80vh';
+            mainContent.style.height = '100vh';
+            header.style.display = 'none';  
+            mainScreen.style.backgroundColor = '#386FA4';
         }
         else if (item == "but__main"){
             mainContent.style.display = 'flex';
@@ -50,7 +53,9 @@ function changePanel(item){
             groupContent.style.display = 'none';
             shopContent.style.display = 'none';
     
-            taskManagerContent.style.height = '100vh';
+            taskManagerContent.style.height = '60vh';
+            header.style.display = 'flex';
+            mainScreen.style.backgroundColor = 'none';
         }
         else if (item == "but__group"){
             mainContent.style.display = 'none';
@@ -59,6 +64,8 @@ function changePanel(item){
             shopContent.style.display = 'none';
     
             groupContent.style.height = '100vh';
+            header.style.display = 'none';
+            mainScreen.style.backgroundColor = 'none';
         }
         else {
             mainContent.style.display = 'none';
@@ -67,8 +74,10 @@ function changePanel(item){
             shopContent.style.display = 'flex';
     
             shopContent.style.height = '100vh';
+            header.style.display = 'none';
+            mainScreen.style.backgroundColor = 'none';
         }
-    }
+    
     
 }
 function selectSubject(){
@@ -83,4 +92,8 @@ function selectSubject(){
     //    subject.style.backgroundColor = 'red';
     //}
 
+}
+function closeScreen(){
+    document.getElementById('register__screen').style.display = 'none';
+    document.getElementById('screen').style.display = 'block';
 }

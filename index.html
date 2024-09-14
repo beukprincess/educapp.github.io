@@ -12,6 +12,21 @@
 <!--Header-->
 
     <body>
+        <div class="register__screen" id="register__screen">
+            <form>
+                <h1 align="center">Регістрація</h1>
+                <div class="name__text">Ім'я</div>
+                <input type="textfiled" class="name"><br><br>
+                <div class="surname__text">Прізвище</div>
+                <input type="textfiled" class="surname"><br>
+                <fieldset id="radio__group" class="radio__group" align="center">
+                    <input type="radio" class="status" name="radio__group">учень
+                    <input type="radio" class="status" name="radio__group">вчитель
+                </fieldset>
+                <p align="center"><button class="regist" onclick="closeScreen()">Зареєструватися</button></p>
+            </form>
+        </div>
+        <div class="screen" id="screen">
         <div class="navbar">
             <a href="#home">Аватар</a>
             <div class="right__side">
@@ -20,16 +35,18 @@
             </div>
         </div>
           
-        <div class = "main__screen">
-            <div class = "header__content">
+        <div class = "main__screen" id="main__screen">
+            <div class = "header__content" id="header__content">
 
             </div>
             <div class = "content__box" id="main">
-                <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Математика</div></button>
-                <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Фізика</div></button>
-                <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Хімія</div></button>
-                <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Історія</div></button>
-                <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Фізкультура</div></button>
+                <div class="subjects">
+                    <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Математика</div></button>
+                    <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Фізика</div></button>
+                    <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Хімія</div></button>
+                    <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Історія</div></button>
+                    <button class="subject" onclick="selectSubject()" id="subject"><div class="logo__subject"></div><div class="name__subject">Фізкультура</div></button>
+                </div>
             </div>
             <div class = "content__box" id="task__manager">
                 
@@ -47,7 +64,7 @@
             <a href="#news"  onclick="changePanel('but__group')" id="but__group">Група</a>
             <a href="#contact"  onclick="changePanel('but__shop')" id="but__shop">Магазин</a>
         </div>
-          
+        </div>
         
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script src="app.js"></script>

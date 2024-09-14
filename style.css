@@ -4,12 +4,13 @@ body{
     margin: 0px;
     background-color: #91E5F6;
     font-family:Arial, Helvetica, sans-serif;
+    transition: all 1s;
 }
 .header__content{
     display:flex;
     width: 100%;
     background-color: #91E5F6;
-    height:300px;
+    height:360px;
 }
 
 .main__screen {
@@ -19,14 +20,19 @@ body{
 .content__box{
     display: flex;
     flex-wrap:wrap;
+
     justify-content: center;
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     background-color: #386FA4;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
 }
-
+.subjects{
+    width:100%;
+    align-items:center;
+    margin-left:9%;
+}
 .navbar {
     display: flex;
     overflow: hidden;
@@ -96,7 +102,7 @@ body{
     display:none;
 }
 .subject{
-    margin-top:10px;
+    margin-top:25px;
     justify-content:center;
     width:90%;
     height:50px;
@@ -104,6 +110,12 @@ body{
     border:none;
     border-radius:15px;
 }
+.subject:hover{
+    background-color: #0d2d41;
+}
+.subject:active {
+    background-color: #0a202e;
+  }
 .name__subject{
     float:right;
     margin-top:4px;
@@ -118,4 +130,44 @@ body{
     width:30px;
     height:30px;
     border-radius:20px;
+}
+.register__screen{
+    display:flex;
+    width:100%;
+    height:100vh;
+    background-color:#133C55;
+    color:white;
+    font-size:18px;
+    letter-spacing:1px;
+    justify-content:center;
+}
+.screen{
+    display: none;
+}
+.radio__group{
+    border:none;
+}
+.name, .surname{
+    margin-left:5px;
+    height:20px;
+    background:none;
+    border:2px solid #59A5D8;
+    border-radius: 20px;
+    color:white;
+    float:right;
+    font-size:18px;
+    margin-top:5px;
+}
+.surname__text, .name__text{
+    margin-left:15px;
+}
+h1{
+    margin-top:200px;
+}
+.regist{
+    background:none;
+    border:2px solid #59A5D8;
+    border-radius: 20px;
+    color:white;
+    font-size:18px;
 }
