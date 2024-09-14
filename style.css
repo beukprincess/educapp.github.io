@@ -8,16 +8,20 @@ body {
 
 .container {
 	max-width: 390px;
+	background-color: blue;
 }
 
 .inner {
-	display: grid;
+	
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 200px 200px 200px;
+	background-color: red;
 }
 #test{
+	position: absolute;
 	font-size:34px;
-	text-align:left;
+	margin-left: 100px;
+	text-align:center;
 	font-weight: 700;
 
 }
