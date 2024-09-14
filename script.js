@@ -42,7 +42,7 @@ function changePanel(item){
             groupContent.style.display = 'none';
             shopContent.style.display = 'none';
     
-            mainContent.style.height = '50vh';
+            mainContent.style.height = '80vh';
         }
         else if (item == "but__main"){
             mainContent.style.display = 'flex';
