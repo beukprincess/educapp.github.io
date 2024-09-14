@@ -19,10 +19,13 @@ body{
 .content__box{
     height: 50vh;
     width: 100%;
-    background-color: #564D80    ;
+    background-color: #564D80;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
 }
 
 .navbar {
+    display: flex;
     overflow: hidden;
     background-color: #44344F;
     position: fixed;
@@ -31,10 +34,10 @@ body{
     z-index: 100;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    justify-content: space-between;
   }
-  
   .navbar a {
-    float: left;
+    float:left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -57,11 +60,12 @@ body{
     bottom: 0;
     width: 100%;
     z-index: 100;
+    display:flex;
   }
   
   .botbar a {
-    float: left;
     display: block;
+    width:25%;
     color: #f2f2f2;
     text-align: center;
     padding: 30px 16px;
@@ -74,6 +78,18 @@ body{
   }
   
   .botbar button{
+    display:none;
     background: none;
     border:none;
   }
+  .navbar button{
+    float:right;
+    display:block;
+    background: none;
+    border:none;
+  }
+  .settings__img{
+    padding:20px;
+    width:30px;
+    height:30px;
+}
