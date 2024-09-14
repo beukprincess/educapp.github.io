@@ -158,6 +158,9 @@ body{
     font-size:18px;
     margin-top:5px;
 }
+.name:active{
+    border:2px solid #59A5D8;
+}
 .surname__text, .name__text{
     margin-left:15px;
 }
@@ -167,7 +170,8 @@ h1{
 .regist{
     background:none;
     border:2px solid #59A5D8;
-    border-radius: 20px;
+    border-radius: 30px;
     color:white;
     font-size:18px;
+    padding:10px;
 }
