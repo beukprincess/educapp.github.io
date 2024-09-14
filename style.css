@@ -25,7 +25,7 @@ body{
 .navbar {
     overflow: hidden;
     background-color: #44344F;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -53,7 +53,7 @@ body{
 
   .botbar {
     background-color: #44344F;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     z-index: 100;
