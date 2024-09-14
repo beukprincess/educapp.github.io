@@ -38,12 +38,11 @@
             </div>
         </div>
         <div class="botbar">
-            <button><img src = "images/houseico.svg"></button>
-            <a href="#news">Головна</a>
-            <a href="#contact">Завдання</a>
-            <a href="#news">Група</a>
-            <a href="#contact">Магазин</a>
-          </div>
+            <a href="#news"  onclick="changePanel('but__main')" id="but__main">Головна</a>
+            <a href="#contact" onclick="changePanel('but__task__manager')" id="but__task__manager">Завдання</a>
+            <a href="#news"  onclick="changePanel('but__group')" id="but__group">Група</a>
+            <a href="#contact"  onclick="changePanel('but__shop')" id="but__shop">Магазин</a>
+        </div>
           
         
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
