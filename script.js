@@ -94,6 +94,21 @@ function selectSubject(){
 
 }
 function closeScreen(){
-    document.getElementById('register__screen').style.display = 'none';
-    document.getElementById('screen').style.display = 'block';
+
+
+    let name = document.getElementById('textfield__name').value;
+    let surname = document.getElementById('textfield__surname').value;
+    let student = document.getElementById('status__student');
+    let teacher = document.getElementById('status__teacher');
+    let error = "Помилка";
+    if(name.length < 4){
+        alert(error);
+    }
+    else if(surname.length < 4){
+        alert(error);
+    }
+    else {
+        document.getElementById('register__screen').style.display = 'none';
+        document.getElementById('screen').style.display = 'block';
+    }
 }

@@ -16,12 +16,12 @@
             <form>
                 <h1 align="center">Регістрація</h1>
                 <div class="name__text">Ім'я</div>
-                <input type="textfiled" class="name"><br><br>
+                <input type="textfiled" class="name" id="textfield__name"><br><br>
                 <div class="surname__text">Прізвище</div>
-                <input type="textfiled" class="surname"><br>
+                <input type="textfiled" class="surname" id="textfield__surname"><br>
                 <fieldset id="radio__group" class="radio__group" align="center">
-                    <input type="radio" class="status" name="radio__group">учень
-                    <input type="radio" class="status" name="radio__group">вчитель
+                    <input type="radio" class="status" name="radio__group" id="status__student" checked="checked">учень
+                    <input type="radio" class="status" name="radio__group" id="status__teacher">вчитель
                 </fieldset>
                 <p align="center"><button class="regist" onclick="closeScreen()">Зареєструватися</button></p>
             </form>
